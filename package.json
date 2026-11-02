@@ -1,0 +1,23 @@
+{
+  "name": "belt-conveyor-power-calc",
+  "version": "1.0.0",
+  "description": "Simplified belt conveyor drive power estimation CLI",
+  "license": "MIT",
+  "author": "shanguoao2026-web",
+  "type": "module",
+  "bin": {
+    "belt-conveyor-power-calc": "dist/cli.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/cli.js",
+    "test": "npm run build && node test/calculator.test.js"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.0",
+    "typescript": "^5.7.0"
+  }
+}
